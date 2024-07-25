@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: sans-serif;
 }
 
 .background {
@@ -9,7 +10,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #f9fafb, #d2d6db);
+  background: linear-gradient(to bottom, #F9FAFB, #D2D6DB);
 }
 
 .content-container {
@@ -71,13 +72,13 @@ html, body {
 .user-name {
   font-weight: 600;
   font-size: 1.125rem; 
-  color: #1a1a1a; 
+  color: #171717;
 }
 
 .user-handle {
   font-weight: 400;
   font-size: 0.875rem; 
-  color: #737373; 
+  color: #525252; 
 }
 
 .card-content {
@@ -91,5 +92,5 @@ html, body {
 .card-text {
   font-weight: 400;
   font-size: 1rem; 
-  color: #737373; 
+  color: #525252; 
 }
