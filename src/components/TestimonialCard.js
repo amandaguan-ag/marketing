@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const TestimonialCard = ({ author, handle, blurb, imageSrc, imageAlt }) => {
   return (
-    <div className="h-[233px] w-[340px] flex flex-col justify-center gap-4 bg-white p-6 rounded-lg border border-solid border-neutral-200 shadow-md">
+    <div className="h-[233px] w-[340px] flex flex-col justify-center gap-4 bg-white p-6 rounded-lg ring-1 ring-neutral-200 shadow-md">
       <div className="flex justify-center items-center gap-4 w-full">
         <div className="w-12 h-12">
           <Image
