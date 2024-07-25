@@ -7,9 +7,6 @@ export default function TestimonialCardPage() {
         className="flex flex-col items-center"
         style={{
           marginTop: "200px",
-          marginBottom: "335px",
-          marginLeft: "550px",
-          marginRight: "550px",
         }}
       >
         <TestimonialCard
