@@ -16,6 +16,7 @@ const TestimonialCard = ({ author, handle, blurb, imageSrc, imageAlt }) => {
           width={48}
           height={48}
           className="rounded-full"
+          priority={true} 
         />
         <div className="flex flex-col gap-1 overflow-hidden">
           <p className="text-lg text-neutral-900 font-semibold whitespace-nowrap overflow-hidden text-ellipsis">
