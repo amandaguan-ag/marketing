@@ -3,12 +3,7 @@ import TestimonialCard from "../components/TestimonialCard";
 export default function TestimonialCardPage() {
   return (
     <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-gray-50 to-[#d2d6db]">
-      <div
-        className="flex flex-col items-center"
-        style={{
-          marginTop: "200px",
-        }}
-      >
+      <div className="flex flex-col items-center custom-margin-768 custom-margin-375 custom-margin-default">
         <TestimonialCard
           author="Sarah Dole"
           handle="@sarahdole"
