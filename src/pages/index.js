@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="page-container">
+    <div className="background">
       <div className="content-container">
         <div className="card">
           <div className="card-header">

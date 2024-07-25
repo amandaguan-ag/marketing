@@ -1,13 +1,18 @@
-.page-container {
-  height: 768px;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.background {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(to bottom, #f9fafb, #d2d6db);
 }
 
 .content-container {
-  height: 768px;
-  width: 1440px;
   display: flex;
   flex-direction: column;
   align-items: center;
