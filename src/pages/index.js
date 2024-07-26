@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex justify-center items-center bg-gradient-to-b from-gray-50 to-[#d2d6db]">
+    <main className="min-h-screen flex justify-center items-center from-gray-50 to-[#d2d6db]">
       <nav>
         <ul className="list-none">
           <li className="mb-4">
