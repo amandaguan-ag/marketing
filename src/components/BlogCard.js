@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Image from "next/image";
 import { RiArrowRightLine } from "@remixicon/react";
 
@@ -41,6 +42,13 @@ const BlogCard = ({ title, category, description, imageSrc }) => {
       </div>
     </article>
   );
+};
+
+BlogCard.propTypes = {
+  category: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  imageSrc: PropTypes.string.isRequired,
 };
 
 export default BlogCard;
