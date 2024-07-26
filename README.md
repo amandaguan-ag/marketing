@@ -4,11 +4,7 @@ This project is part of the **Great Front End Marketing Project** track from [Gr
 
 ## Overview
 
-This project focuses on building key components and pages typically found in marketing websites. These components include testimonial cards, and other UI elements essential for an effective marketing page.
-
-## Features
-
-- **Testimonial Card**: A responsive and reusable testimonial card component built using Next.js and Tailwind CSS.
+This project focuses on building key components and pages typically found in marketing websites. These components include testimonial cards, blog cards, and other UI elements essential for an effective marketing page.
 
 ## Getting Started
 
@@ -49,22 +45,26 @@ Open your browser and navigate to `http://localhost:3000` to see the home page w
 
 The Testimonial Card component showcases user testimonials with a clean and modern design. It accepts dynamic content through props, making it reusable across various parts of the marketing site.
 
+### Blog Card
+
+The Blog Card component is designed to display article previews with a consistent layout. It includes an image, a category badge, a title, an excerpt, and a "Read more" link. The card is fully responsive and adapts to different screen sizes.
+
 ## Completion Points
 
-- Design Fidelity
+- **Design Fidelity**
    - The project closely follows the design specifications by using the specified text color, font size, font weight, spacing, and dimensions. Tailwind CSS utility classes were used to maintain consistency and accuracy in design.
 
-- Cross-Browser Compatibility
+- **Cross-Browser Compatibility**
    - The solution has been tested and verified to work on major browsers including Chrome, Firefox, and Safari. This ensures a consistent user experience across different platforms.
 
-- Handle Long Strings
-   - The Testimonial Card UI can accommodate extremely long strings by either wrapping to the next line or truncating the text with an ellipsis. This was achieved using Tailwind CSS classes like `overflow-hidden`, `text-ellipsis`, and `whitespace-nowrap` for handling text overflow gracefully.
+- **Handle Long Strings**
+   - The Testimonial Card and Blog Card UIs can accommodate extremely long strings by either wrapping to the next line or truncating the text with an ellipsis. This was achieved using Tailwind CSS classes like `overflow-hidden`, `text-ellipsis`, and `whitespace-nowrap` for handling text overflow gracefully.
 
-- Performance Optimization
+- **Performance Optimization**
    - Image assets are optimized using the Next.js `Image` component, which serves images in the best format and size for the user's device. Code minification and tree-shaking are automatically handled by Next.js during the production build to ensure quick load times and a smooth, responsive user experience.
 
-- Accessibility and Semantics
-   - Best practices for web accessibility were followed by using semantic HTML elements such as `<section>`, `<header>`, and `<main>`. ARIA roles and proper `alt` tags were added to images to enhance accessibility for users relying on assistive technologies.
+- **Accessibility and Semantics**
+   - Best practices for web accessibility were followed by using semantic HTML elements such as `<section>`, `<header>`, and `<main>`. ARIA roles and proper `alt` tags were added to images to enhance accessibility for users relying on assistive technologies. Buttons and links are navigable using keyboard controls to ensure accessibility for all users.
 
 ## Learn More
 
