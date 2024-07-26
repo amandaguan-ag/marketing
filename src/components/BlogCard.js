@@ -30,7 +30,7 @@ const BlogCard = ({ title, category, description, imageSrc }) => {
             {description}
           </span>
           <div className="flex justify-start items-center gap-1.5 absolute bottom-0 left-0 px-0.5">
-            <span className="font-medium text-base text-indigo-700 hover:underline focus:underline">
+            <span className="font-medium text-base text-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
               Read more
             </span>
             <RiArrowRightLine className="w-5 h-5 text-indigo-700" />

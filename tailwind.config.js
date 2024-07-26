@@ -29,5 +29,10 @@ module.exports = {
       },
     },
   },
+  variants: {
+    extend: {
+      ringWidth: ["focus"],
+    },
+  },
   plugins: [],
 };
