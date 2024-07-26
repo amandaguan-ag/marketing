@@ -10,6 +10,7 @@ const BlogCard = ({ title, category, description, imageSrc }) => {
         width={340}
         height={288}
         className="self-stretch h-72 object-cover rounded-t-lg"
+        preload={true}
       />
       <div className="flex flex-col gap-3 self-stretch px-4 py-6">
         <div className="flex flex-col gap-2 self-stretch relative">
