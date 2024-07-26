@@ -12,7 +12,7 @@ const BlogCard = ({ title, category, description, imageSrc }) => {
         className="self-stretch h-72 object-cover rounded-t-lg"
       />
       <div className="flex flex-col gap-3 self-stretch px-4 py-6">
-        <header className="flex flex-col gap-2 self-stretch">
+        <header className="flex flex-col gap-2 items-start">
           <div
             className="flex items-center bg-green-50 px-2 py-0.5 rounded-full border border-solid border-green-200"
             aria-label={`Category: ${category}`}
@@ -21,7 +21,7 @@ const BlogCard = ({ title, category, description, imageSrc }) => {
               {category}
             </span>
           </div>
-          <h2 className="font-semibold text-lg text-neutral-900 mt-8">
+          <h2 className="font-semibold text-lg text-neutral-900">
             {title}
           </h2>
         </header>
