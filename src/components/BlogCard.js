@@ -25,7 +25,7 @@ const BlogCard = ({ title, category, description, imageSrc }) => {
             {title}
           </h2>
         </header>
-        <p className="font-medium text-base text-neutral-600 line-clamp-2">
+        <p className="font-medium text-base text-neutral-600">
           {description}
         </p>
         <footer className="flex justify-start items-center gap-1.5 mt-auto">
