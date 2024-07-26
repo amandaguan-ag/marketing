@@ -8,8 +8,11 @@ export default function Home() {
           <li className="mb-4">
             <Link href="/testimonial-card">Testimonial Card</Link>
           </li>
-          <li>
+          <li className="mb-4">
             <Link href="/blog-card">Blog Card</Link>
+          </li>
+          <li className="mb-4">
+            <Link href="/profile-card">Profile Card</Link>
           </li>
         </ul>
       </nav>
