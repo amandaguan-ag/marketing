@@ -3,7 +3,7 @@ import { RiArrowRightLine } from "@remixicon/react";
 
 const BlogCard = ({ title, category, description, imageSrc }) => {
   return (
-    <article className="w-[340px] flex flex-col bg-white rounded-lg shadow-md border border-neutral-200">
+    <article className="w-[340px] flex flex-col bg-white rounded-lg shadow-md border border-neutral-200 mt-[120px] mx-auto">
       <Image
         src={imageSrc}
         alt={`${title} image`}
@@ -12,9 +12,9 @@ const BlogCard = ({ title, category, description, imageSrc }) => {
         className="self-stretch h-72 object-cover rounded-t-lg"
       />
       <div className="flex flex-col gap-3 self-stretch px-4 py-6">
-        <header className="flex flex-col gap-2 self-stretch relative">
+        <header className="flex flex-col gap-2 self-stretch">
           <div
-            className="flex items-center bg-green-50 px-2 py-0.5 rounded-full border border-solid border-green-200 absolute top-0 left-0"
+            className="flex items-center bg-green-50 px-2 py-0.5 rounded-full border border-solid border-green-200"
             aria-label={`Category: ${category}`}
           >
             <span className="font-normal text-sm text-center text-green-700">
@@ -25,11 +25,10 @@ const BlogCard = ({ title, category, description, imageSrc }) => {
             {title}
           </h2>
         </header>
-        <p className="font-medium text-base text-neutral-600">{description}</p>
-        <footer
-          className="flex justify-start items-center gap-1.5 mt-auto relative"
-          style={{ paddingBottom: "36px" }}
-        >
+        <p className="font-medium text-base text-neutral-600 line-clamp-2">
+          {description}
+        </p>
+        <footer className="flex justify-start items-center gap-1.5 mt-auto">
           <a
             href="#"
             className="flex justify-start items-center gap-1.5 px-0.5 text-indigo-700 font-medium text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
