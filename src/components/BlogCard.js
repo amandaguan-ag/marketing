@@ -26,21 +26,17 @@ const BlogCard = ({ title, category, description, imageSrc }) => {
           </span>
         </div>
         <div
-          className="flex flex-col gap-6 self-stretch mt-auto"
+          className="flex flex-col gap-6 self-stretch mt-auto relative"
           style={{ paddingBottom: "36px" }}
         >
           <span className="font-medium text-base text-neutral-600">
             {description}
           </span>
-          <div className="flex justify-center items-center gap-1.5 rounded">
-            <div className="flex justify-center items-center px-0.5">
-              <span className="font-medium text-base text-indigo-700">
-                Read more
-              </span>
-            </div>
-            <div className="w-5 h-5">
-              <RiArrowRightLine className="w-[13.333333015441895px] h-[12.963600158691406px] text-indigo-700" />
-            </div>
+          <div className="flex justify-start items-center gap-1.5 absolute bottom-0 left-0 px-0.5">
+            <span className="font-medium text-base text-indigo-700">
+              Read more
+            </span>
+            <RiArrowRightLine className="w-5 h-5 text-indigo-700" />
           </div>
         </div>
       </div>
