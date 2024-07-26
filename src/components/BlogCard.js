@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { RiArrowRightLine } from "@remixicon/react";
 
 const BlogCard = ({ title, category, description, imageSrc }) => {
   return (
@@ -38,14 +39,7 @@ const BlogCard = ({ title, category, description, imageSrc }) => {
               </span>
             </div>
             <div className="w-5 h-5">
-              <svg
-                className="w-[13.333333015441895px] h-[12.963600158691406px] text-indigo-700"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13l-1 1 4 4H6v2h8l-4 4 1 1 6-6z" />
-              </svg>
+              <RiArrowRightLine className="w-[13.333333015441895px] h-[12.963600158691406px] text-indigo-700" />
             </div>
           </div>
         </div>
