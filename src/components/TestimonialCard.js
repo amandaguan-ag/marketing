@@ -7,7 +7,7 @@ const notoSans = Noto_Sans({ subsets: ["latin"] });
 const TestimonialCard = ({ author, handle, blurb, imageSrc, imageAlt }) => {
   return (
     <section
-      className={`${notoSans.className} bg-white p-6 rounded-lg w-full max-w-md text-neutral-600 flex flex-col gap-4 shadow-md outline outline-1 outline-neutral-200`}
+      className={`${notoSans.className} bg-white p-6 rounded-lg w-[340px] text-neutral-600 flex flex-col gap-4 shadow-md mx-auto mt-[200px]`}
       role="complementary"
     >
       <header className="flex items-center gap-4">

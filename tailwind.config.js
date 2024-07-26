@@ -27,6 +27,9 @@ module.exports = {
         "120px": "120px",
         "200px": "200px",
       },
+      fontFamily: {
+        sans: ["Noto Sans", "sans-serif"],
+      },
     },
   },
   variants: {

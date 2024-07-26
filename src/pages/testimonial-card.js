@@ -2,8 +2,8 @@ import TestimonialCard from "../components/TestimonialCard";
 
 export default function TestimonialCardPage() {
   return (
-    <main className="min-h-screen flex justify-center items-center bg-gradient-to-b from-gray-50 to-[#d2d6db]">
-      <div className="mt-[200px] mx-auto max-w-[1280px] px-8">
+    <main className="min-h-screen flex justify-center items-start bg-gradient-to-b from-gray-50 to-[#d2d6db]">
+      <div className="container">
         <TestimonialCard
           author="Sarah Dole"
           handle="@sarahdole"
