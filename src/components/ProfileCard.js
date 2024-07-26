@@ -1,5 +1,11 @@
 import Image from "next/image";
 import PropTypes from "prop-types";
+import {
+  RiGithubFill,
+  RiLinkedinFill,
+  RiInstagramFill,
+  RiTwitterFill,
+} from "@remixicon/react";
 
 const ProfileCard = ({ name, position, description, imageSrc, alt }) => {
   return (
@@ -35,22 +41,22 @@ const ProfileCard = ({ name, position, description, imageSrc, alt }) => {
         <div className="flex justify-center gap-4 self-stretch">
           <div className="flex justify-center items-center gap-2 p-2 rounded">
             <div className="w-5 h-5">
-              <svg className="w-[16.666683197021484px] h-[16.255502700805664px] text-indigo-700"></svg>
+              <RiGithubFill className="text-indigo-700 w-5 h-5" />
             </div>
           </div>
           <div className="flex justify-center items-center gap-2 p-2 rounded">
             <div className="w-5 h-5">
-              <svg className="w-[15.000015258789062px] h-[15px] text-indigo-700"></svg>
+              <RiLinkedinFill className="text-indigo-700 w-5 h-5" />
             </div>
           </div>
           <div className="flex justify-center items-center gap-2 p-2 rounded">
             <div className="w-5 h-5">
-              <svg className="w-[16.666099548339844px] h-[16.666099548339844px] text-indigo-700"></svg>
+              <RiInstagramFill className="text-indigo-700 w-5 h-5" />
             </div>
           </div>
           <div className="flex justify-center items-center gap-2 p-2 rounded">
             <div className="w-5 h-5">
-              <svg className="w-[17.977466583251953px] h-[16.25px] text-indigo-700"></svg>
+              <RiTwitterFill className="text-indigo-700 w-5 h-5" />
             </div>
           </div>
         </div>
