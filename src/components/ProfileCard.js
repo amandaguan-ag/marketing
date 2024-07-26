@@ -28,6 +28,7 @@ const ProfileCard = ({
             width={64}
             height={64}
             className="w-16 h-16 object-cover rounded-full"
+            priority={true}
           />
         </div>
         <div className="flex flex-col justify-center items-center gap-1 self-stretch">
