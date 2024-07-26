@@ -46,7 +46,7 @@ const ProfileCard = ({
       <div className="flex flex-col gap-6 self-stretch">
         <a
           href={`mailto:${socialLinks.email}`}
-          className="flex justify-center items-center gap-1.5 self-stretch bg-indigo-700 px-4 py-2.5 rounded text-white font-medium text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          className="flex justify-center items-center gap-1.5 self-stretch bg-indigo-700 px-4 py-2.5 rounded text-white font-medium text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-indigo-800"
           aria-label="Contact me"
         >
           Contact me
@@ -55,7 +55,7 @@ const ProfileCard = ({
           {socialLinks.github && (
             <a
               href={socialLinks.github}
-              className="flex justify-center items-center gap-2 p-2 rounded text-indigo-700"
+              className="flex justify-center items-center gap-2 p-2 rounded text-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-indigo-50"
               aria-label="GitHub"
             >
               <RiGithubFill className="w-5 h-5" />
@@ -64,7 +64,7 @@ const ProfileCard = ({
           {socialLinks.linkedin && (
             <a
               href={socialLinks.linkedin}
-              className="flex justify-center items-center gap-2 p-2 rounded text-indigo-700"
+              className="flex justify-center items-center gap-2 p-2 rounded text-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-indigo-50"
               aria-label="LinkedIn"
             >
               <RiLinkedinBoxFill className="w-5 h-5" />
@@ -73,7 +73,7 @@ const ProfileCard = ({
           {socialLinks.instagram && (
             <a
               href={socialLinks.instagram}
-              className="flex justify-center items-center gap-2 p-2 rounded text-indigo-700"
+              className="flex justify-center items-center gap-2 p-2 rounded text-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-indigo-50"
               aria-label="Instagram"
             >
               <RiInstagramLine className="w-5 h-5" />
@@ -82,7 +82,7 @@ const ProfileCard = ({
           {socialLinks.twitter && (
             <a
               href={socialLinks.twitter}
-              className="flex justify-center items-center gap-2 p-2 rounded text-indigo-700"
+              className="flex justify-center items-center gap-2 p-2 rounded text-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-indigo-50"
               aria-label="Twitter"
             >
               <RiTwitterFill className="w-5 h-5" />
