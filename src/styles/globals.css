@@ -10,21 +10,3 @@ html, body {
   text-rendering: optimizeLegibility;
   background: linear-gradient(147.52deg, #f9fafb 8.89%, #d2d6db 100.48%);
 }
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .custom-margin-768 {
-    margin-top: 200px;
-    margin-left: 214px;
-    margin-right: 214px;
-    margin-bottom: 591px;
-  }
-}
-
-@media (min-width: 375px) and (max-width: 812px) {
-  .custom-margin-375 {
-    margin-top: 200px;
-    margin-left: 17.5px;
-    margin-right: 17.5px;
-    margin-bottom: 379px;
-  }
-}
