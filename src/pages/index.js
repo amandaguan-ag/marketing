@@ -6,20 +6,24 @@ export default function Home() {
       <nav aria-label="Main navigation">
         <ul className="list-none">
           <li className="mb-4">
-            <Link href="/testimonial-card">
-              <a aria-label="Navigate to Testimonial Card page">
-                Testimonial Card
-              </a>
+            <Link
+              href="/testimonial-card"
+              aria-label="Navigate to Testimonial Card page"
+            >
+              Testimonial Card
             </Link>
           </li>
           <li className="mb-4">
-            <Link href="/blog-card">
-              <a aria-label="Navigate to Blog Card page">Blog Card</a>
+            <Link href="/blog-card" aria-label="Navigate to Blog Card page">
+              Blog Card
             </Link>
           </li>
           <li className="mb-4">
-            <Link href="/profile-card">
-              <a aria-label="Navigate to Profile Card page">Profile Card</a>
+            <Link
+              href="/profile-card"
+              aria-label="Navigate to Profile Card page"
+            >
+              Profile Card
             </Link>
           </li>
         </ul>
