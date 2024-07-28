@@ -4,7 +4,7 @@ import Image from "next/image";
 const HeroSimple = ({ title, description, imageSrc }) => {
   return (
     <section
-      className="bg-white rounded-2xl p-6 md:p-8 mx-auto my-4"
+      className="bg-white rounded-2xl p-6 md:p-8 mx-auto my-4 flex"
       aria-labelledby="hero-heading"
     >
       <div className="lg:flex lg:items-center lg:gap-12">
