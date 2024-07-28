@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex justify-center items-center from-gray-50 to-[#d2d6db]">
+    <main className="min-h-screen flex justify-center items-center">
       <nav aria-label="Main navigation">
         <ul className="list-none">
           <li className="mb-4">
@@ -24,6 +24,11 @@ export default function Home() {
               aria-label="Navigate to Profile Card page"
             >
               Profile Card
+            </Link>
+          </li>
+          <li className="mb-4">
+            <Link href="/hero-simple" aria-label="Navigate to Hero Simple page">
+              Hero Simple
             </Link>
           </li>
         </ul>

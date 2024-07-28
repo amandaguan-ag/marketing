@@ -2,7 +2,7 @@ import BlogCard from "../components/BlogCard";
 
 export default function BlogCardPage() {
   return (
-    <main className="min-h-screen flex justify-center items-start from-gray-50 to-[#d2d6db]">
+    <main className="min-h-screen flex justify-center items-start">
       <div className="container mx-auto px-4 sm:px-8 md:px-32 lg:px-32 xl:px-32">
         <BlogCard
           title="Top 5 Living Room Inspirations"
