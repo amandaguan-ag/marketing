@@ -7,6 +7,9 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+body {
   background: linear-gradient(147.52deg, #f9fafb 8.89%, #d2d6db 100.48%);
 }
 
@@ -16,3 +19,7 @@ html, body {
   padding: 0 32px;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
