@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import Image from "next/image";
+import Button from "../components/Button";
 
 const HeroSimple = ({ title, description, imageSrc }) => {
   return (
@@ -19,12 +20,8 @@ const HeroSimple = ({ title, description, imageSrc }) => {
             {description}
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="flex justify-center items-center gap-2.5 bg-white px-6 py-4 rounded border border-neutral-200 text-lg text-neutral-900 hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-              Learn more
-            </button>
-            <button className="flex justify-center items-center gap-2.5 bg-indigo-700 px-6 py-4 rounded text-white text-lg hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-              See pricing
-            </button>
+            <Button type="secondary">Learn more</Button>
+            <Button type="primary">See pricing</Button>
           </div>
         </div>
         <div className="lg:w-1/2 mt-8 lg:mt-0">
