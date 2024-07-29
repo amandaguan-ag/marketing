@@ -6,7 +6,7 @@ import {
   RiInstagramLine,
   RiTwitterFill,
 } from "@remixicon/react";
-import Button from "./Button";
+import Button from "../components/Button";
 
 const ProfileCard = ({
   name,
@@ -54,43 +54,31 @@ const ProfileCard = ({
         </Button>
         <div className="flex justify-center gap-4 self-stretch">
           {socialLinks.github && (
-            <Button
-              type="icon-only"
-              href={socialLinks.github}
-              ariaLabel="GitHub"
-              isIconOnly
-            >
-              <RiGithubFill className="w-5 h-5" />
+            <Button type="text" href={socialLinks.github} ariaLabel="GitHub">
+              <RiGithubFill className="w-5 h-5 text-indigo-700" />
             </Button>
           )}
           {socialLinks.linkedin && (
             <Button
-              type="icon-only"
+              type="text"
               href={socialLinks.linkedin}
               ariaLabel="LinkedIn"
-              isIconOnly
             >
-              <RiLinkedinBoxFill className="w-5 h-5" />
+              <RiLinkedinBoxFill className="w-5 h-5 text-indigo-700" />
             </Button>
           )}
           {socialLinks.instagram && (
             <Button
-              type="icon-only"
+              type="text"
               href={socialLinks.instagram}
               ariaLabel="Instagram"
-              isIconOnly
             >
-              <RiInstagramLine className="w-5 h-5" />
+              <RiInstagramLine className="w-5 h-5 text-indigo-700" />
             </Button>
           )}
           {socialLinks.twitter && (
-            <Button
-              type="icon-only"
-              href={socialLinks.twitter}
-              ariaLabel="Twitter"
-              isIconOnly
-            >
-              <RiTwitterFill className="w-5 h-5" />
+            <Button type="text" href={socialLinks.twitter} ariaLabel="Twitter">
+              <RiTwitterFill className="w-5 h-5 text-indigo-700" />
             </Button>
           )}
         </div>

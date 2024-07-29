@@ -1,42 +1,40 @@
 import PropTypes from "prop-types";
 import classNames from "classnames";
+import Link from "next/link";
 
-const Button = ({ type, children, href, ariaLabel, isIconOnly }) => {
-  const buttonClass = classNames(
-    "flex justify-center items-center gap-2.5 px-6 py-4 rounded text-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2",
+const Button = ({ type, href, children, className, ...props }) => {
+  const baseClass =
+    "focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2";
+  const classes = classNames(
+    baseClass,
     {
-      "bg-indigo-700 text-white hover:bg-indigo-800": type === "primary",
-      "bg-white text-neutral-900 border border-neutral-200 hover:bg-neutral-100":
+      "bg-indigo-700 text-white hover:bg-indigo-800 px-6 py-4 rounded text-center":
+        type === "primary",
+      "bg-white text-neutral-900 border border-neutral-200 hover:bg-neutral-100 px-6 py-4 rounded text-center":
         type === "secondary",
-      "p-2 rounded-full text-indigo-700 hover:bg-indigo-50": isIconOnly,
-    }
+      "text-indigo-700 px-0.5 text-center": type === "text",
+    },
+    className
   );
 
-  if (href) {
-    return (
-      <a href={href} aria-label={ariaLabel} className={buttonClass}>
+  return (
+    <Link href={href} passHref legacyBehavior>
+      <a className={classes} {...props}>
         {children}
       </a>
-    );
-  }
-
-  return (
-    <button
-      className={buttonClass}
-      aria-label={ariaLabel}
-      disabled={type === "disabled"}
-    >
-      {children}
-    </button>
+    </Link>
   );
 };
 
 Button.propTypes = {
-  type: PropTypes.oneOf(["primary", "secondary", "icon-only", "disabled"]),
+  type: PropTypes.oneOf(["primary", "secondary", "text"]).isRequired,
+  href: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-  href: PropTypes.string,
-  ariaLabel: PropTypes.string,
-  isIconOnly: PropTypes.bool,
+  className: PropTypes.string,
+};
+
+Button.defaultProps = {
+  className: "",
 };
 
 export default Button;

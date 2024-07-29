@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Image from "next/image";
 import { RiArrowRightLine } from "@remixicon/react";
-import Button from "./Button";
+import Button from "../components/Button";
 
 const BlogCard = ({ title, category, description, imageSrc }) => {
   return (
@@ -28,9 +28,10 @@ const BlogCard = ({ title, category, description, imageSrc }) => {
         <p className="font-medium text-base text-neutral-600">{description}</p>
         <footer className="flex justify-start items-center gap-1.5 mt-auto">
           <Button
-            type="secondary"
+            type="text"
             href="#"
-            ariaLabel={`Read more about ${title}`}
+            className="flex justify-start items-center gap-1.5 px-0.5 text-indigo-700 font-medium text-base"
+            aria-label={`Read more about ${title}`}
           >
             <span>Read more</span>
             <RiArrowRightLine className="w-5 h-5 text-indigo-700" />
