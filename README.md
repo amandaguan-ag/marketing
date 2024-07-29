@@ -4,7 +4,7 @@ This project is part of the **Great Front End Marketing Project** track from [Gr
 
 ## Overview
 
-This project focuses on building key components and pages typically found in marketing websites. These components include testimonial cards, blog cards, profile cards, and other UI elements essential for an effective marketing page.
+This project focuses on building key components and pages typically found in marketing websites. These components include testimonial cards, blog cards, profile cards, a simple hero section, and other UI elements essential for an effective marketing page.
 
 ## Getting Started
 
@@ -17,8 +17,8 @@ This project focuses on building key components and pages typically found in mar
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/amandaguan-ag/marketing-project.git
-   cd marketing-project
+   git clone https://github.com/amandaguan-ag/marketing.git
+   cd marketing
    ```
 
 2. Install dependencies:
@@ -52,6 +52,10 @@ The Blog Card component displays an article image, badge, title, description, an
 ### Profile Card
 
 The Profile Card component showcases user profile information with a profile picture, name, title, description, and social media links. It is designed to be responsive and maintain a consistent layout across different devices.
+
+### Hero Section
+
+The Hero Section is a simple, responsive component that introduces the website or a particular section with a title, description, and call-to-action buttons. It includes an image and uses semantic HTML elements to ensure accessibility.
 
 ## Completion Points
 
