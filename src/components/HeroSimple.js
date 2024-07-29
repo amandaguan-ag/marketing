@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import Image from "next/image";
+import Link from "next/link";
 import Button from "../components/Button";
 
 const HeroSimple = ({ title, description, imageSrc }) => {
@@ -20,8 +21,12 @@ const HeroSimple = ({ title, description, imageSrc }) => {
             {description}
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button type="secondary">Learn more</Button>
-            <Button type="primary">See pricing</Button>
+            <Link href="">
+              <Button type="secondary">Learn more</Button>
+            </Link>
+            <Link href="">
+              <Button type="primary">See pricing</Button>
+            </Link>
           </div>
         </div>
         <div className="lg:w-1/2 mt-8 lg:mt-0">
