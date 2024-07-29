@@ -1,11 +1,12 @@
-import Image from "next/image";
 import PropTypes from "prop-types";
+import Image from "next/image";
 import {
   RiGithubFill,
   RiLinkedinBoxFill,
   RiInstagramLine,
   RiTwitterFill,
 } from "@remixicon/react";
+import Button from "./Button";
 
 const ProfileCard = ({
   name,
@@ -44,49 +45,53 @@ const ProfileCard = ({
         </span>
       </div>
       <div className="flex flex-col gap-6 self-stretch">
-        <a
+        <Button
+          type="primary"
           href={`mailto:${socialLinks.email}`}
-          className="flex justify-center items-center gap-1.5 self-stretch bg-indigo-700 px-4 py-2.5 rounded text-white font-medium text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-indigo-800"
-          aria-label="Contact me"
+          ariaLabel="Contact me"
         >
           Contact me
-        </a>
+        </Button>
         <div className="flex justify-center gap-4 self-stretch">
           {socialLinks.github && (
-            <a
+            <Button
+              type="icon-only"
               href={socialLinks.github}
-              className="flex justify-center items-center gap-2 p-2 rounded text-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-indigo-50"
-              aria-label="GitHub"
+              ariaLabel="GitHub"
+              isIconOnly
             >
               <RiGithubFill className="w-5 h-5" />
-            </a>
+            </Button>
           )}
           {socialLinks.linkedin && (
-            <a
+            <Button
+              type="icon-only"
               href={socialLinks.linkedin}
-              className="flex justify-center items-center gap-2 p-2 rounded text-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-indigo-50"
-              aria-label="LinkedIn"
+              ariaLabel="LinkedIn"
+              isIconOnly
             >
               <RiLinkedinBoxFill className="w-5 h-5" />
-            </a>
+            </Button>
           )}
           {socialLinks.instagram && (
-            <a
+            <Button
+              type="icon-only"
               href={socialLinks.instagram}
-              className="flex justify-center items-center gap-2 p-2 rounded text-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-indigo-50"
-              aria-label="Instagram"
+              ariaLabel="Instagram"
+              isIconOnly
             >
               <RiInstagramLine className="w-5 h-5" />
-            </a>
+            </Button>
           )}
           {socialLinks.twitter && (
-            <a
+            <Button
+              type="icon-only"
               href={socialLinks.twitter}
-              className="flex justify-center items-center gap-2 p-2 rounded text-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-indigo-50"
-              aria-label="Twitter"
+              ariaLabel="Twitter"
+              isIconOnly
             >
               <RiTwitterFill className="w-5 h-5" />
-            </a>
+            </Button>
           )}
         </div>
       </div>
