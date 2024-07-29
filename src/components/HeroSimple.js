@@ -2,7 +2,15 @@ import PropTypes from "prop-types";
 import Image from "next/image";
 import Button from "../components/Button";
 
-const HeroSimple = ({ title, description, imageSrc }) => {
+const HeroSimple = ({
+  title,
+  description,
+  imageSrc,
+  primaryButtonText,
+  primaryButtonHref,
+  secondaryButtonText,
+  secondaryButtonHref,
+}) => {
   return (
     <section
       className="bg-white rounded-2xl p-6 md:p-8 mx-auto my-4 flex"
@@ -20,11 +28,11 @@ const HeroSimple = ({ title, description, imageSrc }) => {
             {description}
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button type="secondary" href="">
-              Learn more
+            <Button type="secondary" href={secondaryButtonHref}>
+              {secondaryButtonText}
             </Button>
-            <Button type="primary" href="">
-              See pricing
+            <Button type="primary" href={primaryButtonHref}>
+              {primaryButtonText}
             </Button>
           </div>
         </div>
@@ -47,6 +55,10 @@ HeroSimple.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   imageSrc: PropTypes.string.isRequired,
+  primaryButtonText: PropTypes.string.isRequired,
+  primaryButtonHref: PropTypes.string.isRequired,
+  secondaryButtonText: PropTypes.string.isRequired,
+  secondaryButtonHref: PropTypes.string.isRequired,
 };
 
 export default HeroSimple;

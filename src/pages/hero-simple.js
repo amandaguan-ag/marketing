@@ -7,6 +7,10 @@ export default function HeroSimplePage() {
         title="Well crafted abstract images"
         description="High quality abstract images for your projects, wallpaper and presentations."
         imageSrc="/prism.png"
+        primaryButtonText="See pricing"
+        primaryButtonHref="#"
+        secondaryButtonText="Learn more"
+        secondaryButtonHref="#"
       />
     </main>
   );
