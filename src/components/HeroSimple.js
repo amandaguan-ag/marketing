@@ -27,16 +27,24 @@ const HeroSimple = ({
           <p className="font-normal text-lg lg:text-xl text-neutral-600 mb-8">
             {description}
           </p>
-          <div className="flex flex-wrap gap-4">
-            <Button type="secondary" href={secondaryButtonHref}>
+          <div className="grid grid-cols-12 gap-4 lg:gap-8">
+            <Button
+              type="secondary"
+              href={secondaryButtonHref}
+              className="col-span-6 lg:col-span-4"
+            >
               {secondaryButtonText}
             </Button>
-            <Button type="primary" href={primaryButtonHref}>
+            <Button
+              type="primary"
+              href={primaryButtonHref}
+              className="col-span-6 lg:col-span-4"
+            >
               {primaryButtonText}
             </Button>
           </div>
         </div>
-        <div className="col-span-12 lg:col-span-7 mt-8 lg:mt-0">
+        <div className="col-span-12 lg:col-span-5 mt-8 lg:mt-0">
           <Image
             src={imageSrc}
             alt="Hero Image"
