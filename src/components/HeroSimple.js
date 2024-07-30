@@ -44,7 +44,7 @@ const HeroSimple = ({
             </Button>
           </div>
         </div>
-        <div className="col-span-12 lg:col-span-5 mt-8 lg:mt-0">
+        <div className="col-span-12 lg:col-span-7 mt-8 lg:mt-0">
           <Image
             src={imageSrc}
             alt="Hero Image"
