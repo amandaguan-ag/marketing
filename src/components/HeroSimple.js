@@ -16,8 +16,8 @@ const HeroSimple = ({
       className="bg-white rounded-2xl p-6 md:p-8 mx-auto m-4 flex w-full"
       aria-labelledby="hero-heading"
     >
-      <div className="lg:flex lg:items-center lg:gap-12">
-        <div className="lg:w-1/2">
+      <div className="container mx-auto grid gap-8 grid-cols-12 items-center">
+        <div className="col-span-12 lg:col-span-5">
           <h1
             id="hero-heading"
             className="font-semibold text-4xl lg:text-6xl text-neutral-900 mb-4"
@@ -36,7 +36,7 @@ const HeroSimple = ({
             </Button>
           </div>
         </div>
-        <div className="lg:w-1/2 mt-8 lg:mt-0">
+        <div className="col-span-12 lg:col-span-7 mt-8 lg:mt-0">
           <Image
             src={imageSrc}
             alt="Hero Image"
