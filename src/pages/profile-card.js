@@ -2,7 +2,8 @@ import ProfileCard from "../components/ProfileCard";
 
 export default function ProfileCardPage() {
   return (
-    <main className="min-h-screen flex justify-center items-center">
+    <main className="min-h-screen flex flex-col justify-between items-center">
+      <div className="h-[200px]"></div>{" "}
       <ProfileCard
         name="Sarah Dole"
         title="Front End Engineer @ Microsoft"
@@ -17,6 +18,7 @@ export default function ProfileCardPage() {
           twitter: " ",
         }}
       />
+      <div className="flex-grow"></div>
     </main>
   );
 }
