@@ -18,7 +18,7 @@ const ProfileCard = ({
 }) => {
   return (
     <section
-      className="w-[340px] flex flex-col items-center gap-10 bg-white px-4 py-6 rounded-lg shadow-md mx-auto mt-[200px]"
+      className="w-[340px] flex flex-col items-center gap-10 bg-white px-4 py-6 rounded-lg shadow-md mx-auto"
       role="complementary"
     >
       <div className="flex flex-col items-center gap-6 self-stretch">
